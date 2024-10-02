@@ -1,0 +1,261 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="container-example-linea-avance-govco">
+	<div>
+		<h1>
+			Formulario 
+		</h1>
+	</div>
+	<div class="linea-avance-govco iv-linea-avance-govco" id="lineaAvance4">
+		<div class="progress">
+			<div class="progress-bar" role="progressbar" style="height: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+		</div>
+		<div class="item-linea-avance-govco active-linea-avance-govco">
+			<div class="header-linea-avance-govco">
+				<button class="indicator-linea-avance-govco" type="button" data-la-target="#itemLineaAvance41" percentage="15">
+					<span>1</span>
+				</button>
+				<span class="title-linea-avance-govco">Inicio</span>
+			</div>
+			<div id="itemLineaAvance41" class="body-linea-avance-govco" data-la-parent="#lineaAvance4">
+				<div class="contents-linea-avance-govco">
+					<!-- Contenido Item -->
+					<div class="contents-example-linea-avance-govco">
+						<h5>Información de contacto</h5>
+						<div class="entradas-de-texto-govco">
+							<label for="input-basico-id">Nombres</label>
+							<input type="text" id="input-basico-id" placeholder="Ejemplo: Campo de texto" />
+						</div>
+						<div class="entradas-de-texto-govco">
+							<label for="input-basico-id">Apellidos</label>
+							<input type="text" id="input-basico-id" placeholder="Ejemplo: Campo de texto" />
+						</div>
+						<div class="row">
+							<div class="col-12 col-xs-12 col-sm-6">
+								<label for="lista-desplegables4" class="label-desplegable-govco">Tipo de documento<span aria-required="true">*</span></label>
+								<div class="desplegable-govco" style="width:255px; height: 40px;" id="lista-desplegables4" data-type="basic">
+									<select>
+										<option disabled selected>Escoger</option>
+										<option value="1">Cédula de ciudadanía</option>
+										<option value="2">Cédula de extranjería</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-12 col-xs-12 col-sm-6">
+								<div class="entradas-de-texto-govco">
+									<label for="input-basico-id">Número de documento<span aria-required="true">*</span></label>
+									<input type="text" id="input-basico-id" placeholder="Ingresa tu número" />
+								</div>
+							</div>
+						</div>
+						<div class="d-flex justify-content-end">
+							<button type="button" class="btn-govco fill-btn-govco" style="width: 165px; height: 42px; margin-top: 23px;" onclick="nextItemAdvanceLineIVertical(event)">Continuar</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="item-linea-avance-govco">
+			<div class="header-linea-avance-govco">
+				<button class="indicator-linea-avance-govco" type="button" data-la-target="#itemLineaAvance42" percentage="50">
+					<span>2</span>
+				</button>
+				<span class="title-linea-avance-govco">Confirmar identidad</span>
+			</div>
+			<div id="itemLineaAvance42" class="body-linea-avance-govco" data-la-parent="#lineaAvance4">
+				<div class="contents-linea-avance-govco">
+					<!-- Contenido Item -->
+					<div class="contents-example-linea-avance-govco">
+						<h5>Confirmar identidad</h5>
+						<p>Se realizará un análisis biométrico facial, mediante una serie de retos aleatorios como pestañear, sonreír o abrir la boca.</p>
+						<img src="https://govco-prod-webutils.s3.amazonaws.com/uploads/Identidad-Linea-Avance.jpg" alt="...">
+						<div class="d-flex justify-content-end">
+							<button type="button" class="btn-govco fill-btn-govco" style="width: 165px; height: 42px; margin-top: 16px;" onclick="nextItemAdvanceLineIVertical(event)">Continuar</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="item-linea-avance-govco">
+			<div class="header-linea-avance-govco">
+				<button class="indicator-linea-avance-govco" type="button" data-la-target="#itemLineaAvance43" percentage="80">
+					<span>3</span>
+				</button>
+				<span class="title-linea-avance-govco">Generar solicitud</span>
+			</div>
+			<div id="itemLineaAvance43" class="body-linea-avance-govco" data-la-parent="#lineaAvance4">
+				<div class="contents-linea-avance-govco">
+					<!-- Contenido Item -->
+					<div class="contents-example-linea-avance-govco">
+						<h5>Generar solicitud</h5>
+						<label for="lista-desplegables42" class="label-desplegable-govco">Tipo de solicitud<span aria-required="true">*</span></label>
+						<div class="desplegable-govco" style="width:255px; height: 40px;" id="lista-desplegables42" data-type="basic">
+							<select>
+								<option disabled selected>Escoger</option>
+								<option value="1">Cédula de ciudadanía</option>
+								<option value="2">Cédula de extranjería</option>
+							</select>
+						</div>
+						<div class="entradas-de-texto-govco">
+							<label for="input-basico-id">Total ingresos mensuales</label>
+							<input type="text" id="input-basico-id" placeholder="Ejm: $ 1.500.000 COP" />
+						</div>
+						<label class="label-desplegable-govco">¿Es beneficiario de otro programa?</label>
+						<div>
+							<div class="radio-seleccion-govco">
+								<input type="radio" id="radio41" name="radioButton41" value="0">
+								<label for="radio41">Si</label>
+							</div>
+							<div class="radio-seleccion-govco">
+								<input type="radio" id="radio42" name="radioButton41" value="1">
+								<label for="radio42">No</label>
+							</div>
+						</div>
+						<div class="d-flex justify-content-end">
+							<button type="button" class="btn-govco fill-btn-govco" style="width: 165px; height: 42px; margin-top: 59px;" onclick="nextItemAdvanceLineIVertical(event)">Continuar</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="item-linea-avance-govco">
+			<div class="header-linea-avance-govco">
+				<button class="indicator-linea-avance-govco" type="button" data-la-target="#itemLineaAvance44" percentage="100">
+					<span>4</span>
+				</button>
+				<span class="title-linea-avance-govco">Datos adicionales</span>
+			</div>
+			<div id="itemLineaAvance44" class="body-linea-avance-govco" data-la-parent="#lineaAvance4">
+
+				<div class="contents-linea-avance-govco">
+					<!-- Contenido Item -->
+					<div class="contents-example-linea-avance-govco">
+						<h5>Datos adicionales</h5>
+						<p>Para nosotros es muy importante contar con esta información, ya que nos permitirá contactarte de forma rápida y segura.</p>
+						<label class="label-desplegable-govco">¿Tienes algun tipo de discapacidad?</label>
+						<div>
+							<div class="radio-seleccion-govco">
+								<input type="radio" id="radio421" name="radioButton42" value="0">
+								<label for="radio421">Si</label>
+							</div>
+							<div class="radio-seleccion-govco">
+								<input type="radio" id="radio422" name="radioButton42" value="1">
+								<label for="radio422">No</label>
+							</div>
+						</div>
+						<label for="lista-desplegables43" class="label-desplegable-govco" style="margin-top: 16px;">¿Cúal discapacidad?</label>
+						<div class="desplegable-govco" style="width:255px; height: 40px;" id="lista-desplegables43" data-type="basic">
+							<select>
+								<option disabled selected>Escoger</option>
+								<option value="1">Opción 1</option>
+								<option value="2">Opción 2</option>
+							</select>
+						</div>
+						<div class="d-flex justify-content-end">
+							<button type="button" class="btn-govco fill-btn-govco" style="width: 165px; height: 42px; margin-top: 85px;">Finalizar</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="content-example-barra ">
+	<div class="barra-accesibilidad-govco">
+		<button id="botoncontraste" class="icon-contraste" onclick="cambiarContexto()">
+			<span id="titlecontraste">Contraste</span>
+		</button>
+		<button id="botondisminuir" class="icon-reducir" onclick="disminuirTamanio('disminuir')">
+			<span id="titledisminuir">Reducir letra</span>
+		</button>
+		<button id="botonaumentar" class="icon-aumentar" onclick="aumentarTamanio('aumentar')">
+			<span id="titleaumentar">Aumentar letra</span>
+		</button>
+	</div>
+	<div class="row m-5">
+		<div id="para-mirar" class="barra-accesibilidad-letra">
+			<br>
+			<p class="titulo-barra-accesibilidad">&nbsp;Ejemplo barra de accesibilidad</p>
+			<p class="descripcion-barra-accesibilidad">Descripción para ver el tamaño de la letra</p>
+		</div>
+	</div>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="govco-footer">
+            <div class="govco-data-front">
+                <div class="govco-footer-text">
+                    <div class="row govco-nombre-entidad">
+                        <div class="col-xs-12 col-lg-6">
+                            <p class="govco-text-header-1">Nombre completo de la Sede electrónica</p>
+                        </div>
+                        <div class="col-xs-12 col-lg-4 govco-logo-div-a">
+                            <span class="govco-logo-entidad"></span>
+                        </div>
+                    </div>
+
+                    <div class="row col-xs-12 col-lg-7 govco-texto-sedes">
+                        <p class="govco-text-header-2">Sede principal</p>
+                        Dirección: xxxxxx xxx xxx <br class="govco-mostrar">
+                        Departamento y municipio. <br>
+                        Código Postal: xxxx <br>
+                        Horario de atención: Lunes a viernes xx:xx a.m. - xx:xx p.m. <br>
+                        Teléfono conmutador: +57(xx) xxx xx xx <br>
+                        Línea gratuita: +57(xx) xxx xx xx <br>
+                        Línea anticorrupción: +57(xx) xxx xx xx <br>
+                        Correo institucional: <br class="govco-mostrar">
+                        ministerio@ministerio.gov.co <br>
+                        Correo de notificaciones judiciales: <br class="govco-mostrar">
+                        judiciales@gov.co
+                    </div>
+
+                    <div class="row col-xs-12 col-lg-7 govco-network">
+                        <div class="govco-iconContainer">
+                            <span class="icon govco-twitter-square"></span>
+                            <span class="govco-link-modal">Entidad</span>
+                        </div>
+                        <div class="govco-iconContainer">
+                            <span class="icon govco-instagram-square"></span>
+                            <span class="govco-link-modal">Entidad</span>
+                        </div>
+                        <div class="govco-iconContainer">
+                            <span class="icon govco-facebook-square"></span>
+                            <span class="govco-link-modal">Entidad</span>
+                        </div>
+                    </div>
+
+                    <div class="row govco-links-directorio">
+                        <a class="govco-link-modal" href="#">Directorio Institucional</a>
+                    </div>
+
+                    <div class="row govco-links-container">
+                        <div class="govco-link-container mt-2">
+                            <a class="govco-link-modal govco-link-modal-bold" href="#">Políticas</a>
+                            <a class="govco-link-modal govco-link-modal-bold" href="#">Mapa del sitio</a>
+                        </div>
+                        <div class="govco-link-container mt-2">
+                            <a class="govco-link-modal govco-link-modal-bold" href="#">Términos y condiciones</a> <br>
+                        </div>
+                        <div class="govco-link-container mt-2">
+                            <a class="govco-link-modal govco-link-modal-bold" href="#">Accesibilidad</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="govco-footer-logo">
+                <div class="govco-logo-container">
+                    <span class="govco-co"></span>
+                    <span class="govco-separator"></span>
+                    <span class="govco-logo"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
