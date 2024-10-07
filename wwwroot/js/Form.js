@@ -71,6 +71,7 @@ function clickVerticalAdvanceLine(e) {
 	}
 }
 
+
 // Desplegables
 function initDropDown() {
 	initDropDownBasic();

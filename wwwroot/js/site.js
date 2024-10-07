@@ -124,3 +124,4 @@ function tamanioElemento(element) {
     const tamanioParrafo = window.getComputedStyle(element, null).getPropertyValue('font-size');
     return parseFloat(tamanioParrafo);
 }
+

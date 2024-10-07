@@ -295,6 +295,10 @@ html {
     border-width: 0.125rem;
     border-style: solid;
 }
+.start{
+    display:flex;
+    justify-content:flex-start;
+}
 
     .btn-govco.fill-btn-govco:hover,
     .btn-govco.fill-btn-govco:focus-visible,
