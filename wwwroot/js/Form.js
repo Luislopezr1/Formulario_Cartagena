@@ -210,7 +210,10 @@ function enterOptionDropDown(element) {
 		clearIcon.classList.remove("d-none");
 
 		select = select.querySelector('input');
-		select.value = element.innerHTML;
+		sel
+
+
+		ect.value = element.innerHTML;
 	} else {
 		select.innerHTML = element.innerHTML;
 	}
