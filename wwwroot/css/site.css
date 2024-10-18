@@ -19,20 +19,21 @@ html {
 .logo-aut-header-govco {
     position: relative;
     margin-bottom: 2rem;
+    
 }
 
-    .logo-aut-header-govco .link-login-header-govco {
+ .logo-aut-header-govco .link-login-header-govco {
         color: #3366CC;
         font-family: WorkSans-Regular;
         font-size: 14px;
         display: block;
         right: 5.375rem;
         position: absolute;
-    }
+ }
 
-        .logo-aut-header-govco .link-login-header-govco:hover {
+.logo-aut-header-govco .link-login-header-govco:hover {
             color: #004884;
-        }
+}
 
 .container-logo-header-govco {
     display: flex;
@@ -42,7 +43,8 @@ html {
 
     .container-logo-header-govco .logo-header-govco {
         height: 3rem;
-        content: url(https://qa-govco-and.xyz/cdn-v4/assets/images/Entidad.svg);
+        content: url('../Alcaldia logo 2_0.png')
+        
     }
 
     .container-logo-header-govco .container-search-header-govco {
@@ -56,10 +58,11 @@ html {
 
     .container-logo-header-govco {
         border-bottom: 0.188rem solid #004884;
+        justify-content: center;
     }
 
         .container-logo-header-govco .logo-header-govco {
-            height: 2.188rem;
+            
         }
 }
 
@@ -107,9 +110,10 @@ html {
 
         .barra-superior-govco .idioma-icon-barra-superior-govco::before {
             font-family: "govco-font";
-            content: 'ec56';
+            content: 'EN';
             color: #3366CC;
             font-size: 14px;
+           
         }
 
         .barra-superior-govco .idioma-icon-barra-superior-govco:hover::before {
