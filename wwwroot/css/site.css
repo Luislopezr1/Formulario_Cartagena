@@ -28,7 +28,6 @@ html {
         display: block;
         right: 5.375rem;
         position: absolute;
-        margin-top: 2rem;
     }
 
         .logo-aut-header-govco .link-login-header-govco:hover {
@@ -36,7 +35,6 @@ html {
         }
 
 .container-logo-header-govco {
-    padding: 3.563rem 5.375rem 0 5.375rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -57,7 +55,6 @@ html {
     }
 
     .container-logo-header-govco {
-        padding: 0.781rem 0 0.781rem 1.125rem;
         border-bottom: 0.188rem solid #004884;
     }
 
