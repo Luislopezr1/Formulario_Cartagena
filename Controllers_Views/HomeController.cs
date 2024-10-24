@@ -47,29 +47,37 @@ namespace Formulario_Cartagena.Controllers_Views
             string wordPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Certificado.docx");
 
             string nit = datosGuardados.Nit;
-            // Obtener datos de la fila del Excel
-            List<string> data = Lector_Excel.ReadExcelByNIT(excelPath, nit);
-
+			string cedula = datosGuardados.Cc;
+			// Obtener datos de la fila del Excel
+			List<string> data = Lector_Excel.ReadExcelByNIT(excelPath, nit);
+            string cedula_bd = Lector_CC.verificarCedula(data[14]);
             if (data != null)
             {
-                try
+                if (cedula == cedula_bd)
                 {
-                    Remplazar_Campos.ReplaceTextInWord(wordPath, data);
-                    List<string> prev = new List<string>();
-                    prev.Add(data[1]);
-                    prev.Add(data[3]);
-                    prev.Add(data[12]);
-                    //data = new List<string>();
-                    return Json(prev);
+					try
+					{
+						Remplazar_Campos.ReplaceTextInWord(wordPath, data);
+						List<string> prev = new List<string>();
+						prev.Add(data[1]);
+						prev.Add(data[3]);
+						prev.Add(data[12]);
+						//data = new List<string>();
+						return Json(prev);
+					}
+					catch (Exception ex)
+					{
+						return Json(new { success = false, message = "Error al reemplazar datos en el documento Word: " + ex.Message });
+					}
                 }
-                catch (Exception ex)
+                else
                 {
-                    return Json(new { success = false, message = "Error al reemplazar datos en el documento Word: " + ex.Message });
-                }
+					return Json(new { message = "La cedula no coincide "+cedula_bd});
+				}
             }
             else
             {
-                return Json(new { error = "No se encontró la fila con el NIT proporcionado." });
+                return Json(new { message = "No se encontró la fila con el NIT proporcionado." });
             }
         }
     }
