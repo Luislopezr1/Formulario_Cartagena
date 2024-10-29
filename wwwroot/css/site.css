@@ -767,3 +767,7 @@ html {
     .entradas-de-texto-govco .error-icon-entradas-de-texto-govco {
         display: none;
     }
+
+.govco-bg-green {
+    background-color: #009800;
+}

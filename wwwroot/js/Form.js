@@ -50,6 +50,7 @@ function nextItemAdvanceLineIVertical(e) {
 	items[indexActive + 1].closest('.item-linea-avance-govco').classList.remove('checked-linea-avance-govco');
 
 	updateProgressAdvanceLine(items, indexActive + 1, elementParent, 'height');
+
 }
 
 function clickVerticalAdvanceLine(e) {

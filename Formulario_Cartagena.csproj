@@ -21,4 +21,8 @@
     <PackageReference Include="Telerik.Reporting" Version="14.2.20.1021" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Servicios\" />
+  </ItemGroup>
+
 </Project>
