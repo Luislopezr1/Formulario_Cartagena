@@ -13,8 +13,11 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 builder.Services.AddDbContext<bdController>(options =>
-    options.UseMySQL(builder.Configuration.GetConnectionString("DbConnection"),
-                     new MySqlServerVersion(new Version(8, 0, 40))));
+    options.UseMySql(
+        builder.Configuration.GetConnectionString("DbConnection"),
+        new MySqlServerVersion(new Version(8, 0, 40))
+    ));
+
 
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<ApplicationDbContext>();
